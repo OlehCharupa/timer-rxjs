@@ -1,0 +1,46 @@
+.timer {
+  display: flex;
+  justify-content: center;
+}
+
+.field {
+  position: relative;
+  text-align: center;
+  width: 100px;
+}
+.field:not(:last-child) {
+  margin-right: 15px;
+}
+.field:not(:last-child)::after {
+  content: ":";
+  position: absolute;
+  font-size: -webkit-xxx-large;
+  bottom: 55px;
+  right: -15px;
+}
+.value {
+  font-size: 55px;
+  display: block;
+  padding: 15px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  letter-spacing: 0.2em;
+  background-color: rgba(255, 215, 0, 0.3);
+}
+.label {
+  display: block;
+  font-size: 20px;
+}
+
+.btnGroup {
+  margin: 50px auto 0;
+  width: max-content;
+  border: 2px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.button {
+  padding: 15px 15px;
+  border: none;
+  /* background-color: transparent; */
+}
